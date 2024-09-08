@@ -1,0 +1,117 @@
+.main-aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+.main-aboutus .image-aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-aboutus .image-aboutus img{
+    border-radius: 90px;
+    position: relative;
+    height: 200px;
+    width: 600px;
+     z-index: 1;
+}
+.main-aboutus .image-aboutus .heading-aboutus{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    position: absolute;
+    z-index: 2;
+}
+.main-aboutus .aboutus-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.main-aboutus .aboutus-1 .sub-ab-1,.sub-ab-2,.sub-ab-3{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a::before {
+    background: hsl(45 100% 70%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+.main-aboutus .aboutus-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.main-aboutus .aboutus-2 .ab-q-1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    height: fit-content;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+.main-aboutus .aboutus-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.main-aboutus .aboutus-3 .ab-q-2 {
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    height: fit-content;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+@media only screen and (max-width:775px) {
+    .main-aboutus .aboutus-2{
+        flex-direction: column;
+    }
+    .main-aboutus .aboutus-3{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:618px) {
+    .main-aboutus .image-aboutus img{
+        border-radius: 90px;
+        height: 200px;
+        width: 400px;
+    }
+    .main-aboutus .image-aboutus .heading-aboutus{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:418px) {
+    .main-aboutus .image-aboutus img{
+        border-radius: 90px;
+        height: 200px;
+        width: 280px;
+    }
+    .main-aboutus .image-aboutus .heading-aboutus{
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,204 @@
+.main-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.main-contact .head-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main-contact .content-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.main-contact .content-contact .images-contact{
+    position: relative;
+    height: 400px;
+    width: 500px;
+}
+.main-contact .content-contact .images-contact #contact-img-1{
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 1;
+}
+.main-contact .content-contact .images-contact #contact-img-2{
+    height: 190px;
+    position: absolute;
+    top: 170px; /* Adjust as needed to position correctly */
+    left: 240px; /* Adjust as needed to position correctly */
+    z-index: 2;
+}
+.group{ 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:300px; }
+  .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#5264AE; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  .submit_button{
+      font-family:'Open Sans';
+      width: 200px;
+      background-color: #5264AE;
+      color: white;
+      border: none;
+      height: 40px;
+      border-radius: 50px;
+      transition: 0.4s;
+  }
+  .submit_button:hover{
+      background-color: white;
+      color: #5264AE;
+      border-color: black;
+      border: 2px solid; 
+      width: 230px;
+  }
+
+  @media only screen and (max-width:1167px) {
+    .main-contact .content-contact{
+        flex-direction: column-reverse;
+        gap: 1px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-1{
+        left: 0px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-2{
+        left: 180px;
+    }
+  }
+  @media only screen and (max-width:608px) {
+    .main-contact .content-contact{
+        gap: 50px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-1{
+        left: 55px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-2{
+        left: 170px;
+        top: 190px;
+    }
+  }
+   @media only screen and (max-width:511px) {
+    .main-contact .content-contact{
+        gap: 10px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-1{
+        height: 180px;
+        left: 90px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-2{
+        height: 170px;
+        top: 170px;
+    }
+  }
+  @media only screen and (max-width:402px) {
+    .main-contact .content-contact{
+        gap: 1px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-1{
+        height: 160px;
+        left: 110px;
+    }
+    .main-contact .content-contact .images-contact #contact-img-2{
+        height: 150px;
+        left: 200px;
+        top: 170px;
+    }
+    .main-contact .content-contact .form-contact{
+        padding-left: 50px;
+    }
+  }

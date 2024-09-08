@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  background-color: white; /* Set the header background color to white */
+  justify-content: space-around;
+  height: 150px;
+}
+
+.header-logo-image img {
+  height: 140px;
+  width: 200px;
+}
+
+.header-links {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#primary {
+  padding: 60px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#primary li {
+  margin: 0 20px;
+  list-style-type: none;
+}
+
+#primary li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(33, 33, 97); /* Set the initial text color to black */
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(33, 33, 97); /* Set the initial text fill color to black */
+  background-image: linear-gradient(to right, #23abd4 50%, #23abd4 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+#primary li a:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #23abd4;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+}
+
+#primary li a:hover {
+  background-position: 0%;
+}
+
+#primary li a:hover:before {
+  width: 100%;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  top: 50px;
+  right: 0;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.hamburger:hover .dropdown {
+  display: block;
+}
+
+@media only screen and (max-width: 950px) {
+  #primary li a {
+      font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 861px) {
+  #primary li a {
+      font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 828px) {
+  #primary {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+}

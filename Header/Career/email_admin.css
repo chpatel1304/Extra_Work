@@ -1,0 +1,43 @@
+
+.email-admin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 600px;
+    border: 2px solid;
+    gap: 50px;
+}
+.email-admin .header-email-admin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.email-admin .header-email-admin .header-img-admin img{
+    position: relative;
+    height: 200px;
+    width: 600px;
+    z-index: 1;
+}
+.email-admin .header-email-admin .header-logo-admin img{
+    position: absolute;
+    border-radius: 50px;
+    height: 100px;
+    z-index: 2;
+    top: 118px;
+    left: 260px;
+}
+.email-admin .content-email-admin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.email-admin .content-email-admin .info-user-email{ 
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}

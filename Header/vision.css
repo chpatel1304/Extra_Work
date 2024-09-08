@@ -1,0 +1,61 @@
+.main-vision-1{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.main-vision-1 .vision-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-vision-1 .inner-vision-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.main-vision-1 .inner-vision-2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.vision-photos {
+    position: relative;
+    width: 300px; /* Set the width to match the width of the larger image */
+    height: 400px; /* Set the height to match the height of the larger image */
+    right: 20px;
+}
+
+#oneimg-v {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#twoimg-v {
+    position: absolute;
+    top: 180px; /* Adjust as needed to position correctly */
+    left: 130px; /* Adjust as needed to position correctly */
+    z-index: 2;
+}
+
+@media only screen and (max-width:877px) {
+    .main-vision-1 .inner-vision-1{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .main-vision-1 .inner-vision-2{
+        flex-direction: column;
+        gap: 50px;
+    }
+}

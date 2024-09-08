@@ -1,0 +1,127 @@
+.footer{
+    background-image: url(dubai.webp);
+
+}
+.bpad{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 40px;
+}
+.icons a{
+    padding: 15px 8px;
+    text-decoration:none;
+    -webkit-text-fill-color: #fff;
+}
+
+.company_icons{
+    font-size: x-small;
+    padding: 0px 8px;
+    text-decoration:none;
+    -webkit-text-fill-color: #fff;
+}
+
+body{
+    overflow-x: hidden;
+}
+#primary1{
+    display:grid;
+    li{
+      margin:5px 10px;
+      position:relative;
+      list-style-type: none;
+      a{
+        text-decoration:none;
+        padding:5px 10px;
+        font-family:'Open Sans';
+        font-size:18px;
+        line-height:1;
+        font-weight:bold;
+        position:relative;
+        z-index:1;
+        text-align: center;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+            to right,
+            #23abd4,
+            #23abd4 50%,
+            #fff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        transition: all 0.3s ease-in-out;
+        &:before{
+          display:block;
+          content:'';
+          width:0;
+          height:3px;
+          bottom:5px;
+          left:0;
+          bottom:-3px;
+          z-index:0;
+          position:absolute;
+          background:#23abd4;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover{
+          background-position: 0%;
+          &:before{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+#primary2{
+    text-align:center;
+    font-weight:bold;
+    font-family:'Open Sans';
+    color: #fff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.footer-logo-image{
+    img{
+        width: 200px;
+    }
+  }
+.footer_content{
+  text-align:justify;
+  padding: 0px 20px;
+}
+.facebook_icons:hover{
+  transform: scale(1.5);
+  -webkit-text-fill-color: #1877F2;
+  text-decoration: none;
+}
+.insta_icons:hover{
+  transform: scale(1.5);
+  -webkit-text-fill-color: #ee2a7b;
+  text-decoration: none;
+}
+.linkedin_icons:hover{
+  transform: scale(1.5);
+  -webkit-text-fill-color: #0077B5 ;
+  text-decoration: none;
+}
+
+.github_icons:hover{
+  transform: scale(1.5);
+  -webkit-text-fill-color: #ffffff ;
+  text-decoration: none;
+}
+
+.footer_productby .icons{
+  text-align: left;
+  
+  padding: 25px 20px;
+  font-size: 12px;
+}
+.footer_productby a{
+  font-size: 20px;
+  
+}
+.footer_imp_links{
+  text-align: left;
+  
+}
